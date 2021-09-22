@@ -6,8 +6,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-
+ api laravel 8 shop
 ## About Laravel
+http://127.0.0.1:8000/api/V1/brands?page=1   get  show
+http://127.0.0.1:8000/api/V1/brands  post  create
+http://127.0.0.1:8000/api/V1/brands  put  update
+http://127.0.0.1:8000/api/V1/brands  get show all
+
+
+![Screenshot (119)](https://user-images.githubusercontent.com/75145283/134263836-aa8167a9-701b-4a2c-9f92-0f4089de3ee8.png)
+![Screenshot (118)](https://user-images.githubusercontent.com/75145283/134263840-1b8855d2-abf4-4ceb-93d4-bae16490ec6c.png)
+
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
