@@ -11,3 +11,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::apiResource('V1/brands',BrandController::class);
+
+Route::get('V1/deleteList',[BrandController::class,'deleteList']);   //show deleted record

@@ -10,8 +10,7 @@ use Illuminate\Http\Request;
 class BrandController extends Controller
 {
     public function index()
-    {
-
+    { //morteza roozbehi tlg:@mr_roz
         $brands = Brand::paginate(2);
         return $this->okRes([
             'brands'=>BrandResource::collection($brands),
@@ -40,11 +39,7 @@ class BrandController extends Controller
          ]);
 
 
-
-
-
     }
-
 
     public function show(Brand $brand)
     {
@@ -73,15 +68,26 @@ class BrandController extends Controller
 
     }
 
-
-
-
-
-
-
-    public function destroy($id)
+    public function destroy(Brand  $brand)
     {
-        //
+        $brand->delete();
+        return $this->okRes('برند حذف شد');
+    }
+
+
+    public function deleteList()
+    {
+        $brand = Brand::onlyTrashed()->get();
+
+     //   $total = $brand[1]->created_at - $brand[1]->deleted_at;
+
+        return $this->okRes([
+            'محتوا'=>'ليست برند هاي حذف شده',
+            'brands'=> $brand,
+
+        ]);
+
+
     }
 
 
